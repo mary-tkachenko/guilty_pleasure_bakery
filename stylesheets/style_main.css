@@ -1,0 +1,36 @@
+body {
+    background-color:#292929;
+   
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    color: #f44a52;
+    font-family: 'Special Elite', cursive;
+    
+}
+
+#left, #right {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+#products {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.category a {
+    color: #f44a52;
+    text-decoration: none;
+    font-family: 'Special Elite', cursive;
+}
+
+.section a {
+    color: #f44a52;
+    text-decoration: none;
+    font-family: 'Special Elite', cursive;
+}
