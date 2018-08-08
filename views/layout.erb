@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>Guilty Pleasure</title>
+    <link rel="stylesheet" type="text/css" href="semantic-dist/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Permanent+Marker|Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style_product.css">
+    
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="semantic-dist/semantic.min.js"></script>
+</head>
+<body>
+<div id="container">
+  <div id="slideshow">
+    <div class="fling-minislide">
+    <img src="/images/media/slides/1.jpg" alt="Slide 4" />
+    <img src="/images/media/slides/2.jpg" alt="Slide 3" />
+    <img src="/images/media/slides/3.jpg" alt="Slide 2" />
+    <img src="/images/media/slides/10.jpg" alt="Slide 1" />
+    <img src="/images/media/slides/5.png" alt="Slide 0" />
+    <img src="/images/media/slides/6.jpg" alt="Slide 1" />
+    <img src="/images/media/slides/7.jpg" alt="Slide 1" />
+    <img src="/images/media/slides/11.jpg" alt="Slide 1" />
+    <img src="/images/media/slides/12.jpg" alt="Slide 1" />
+    <img src="/images/media/slides/14.png" alt="Slide 1" />
+  
+</div>
+
+    <style>
+    .fling-minislide {height:750px; overflow:hidden; position:relative; margin-top: 20px; border-radius: 15px; margin-left: 5px; }
+    .fling-minislide img{ position:absolute; animation:fling-minislide 45s infinite; opacity:0; height: 750px; border-radius: 15px; margin-left: 5px;}
+
+  @keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}} 
+  .fling-minislide img:nth-child(10){animation-delay:0s;}
+  .fling-minislide img:nth-child(9){animation-delay:5s;}
+  .fling-minislide img:nth-child(8){animation-delay:10s;} 
+  .fling-minislide img:nth-child(7){animation-delay:15s;}
+  .fling-minislide img:nth-child(6){animation-delay:20s;}
+  .fling-minislide img:nth-child(5){animation-delay:25s;}
+  .fling-minislide img:nth-child(4){animation-delay:30s;}
+  .fling-minislide img:nth-child(3){animation-delay:35s;}
+  .fling-minislide img:nth-child(2){animation-delay:40s;}
+  .fling-minislide img:nth-child(1){animation-delay:45s;}
+  </style>
+
+ 
+  </div>
+  <div id="product_page">
+    <div id="product_header">
+      <div id="logo_white">
+      <a href="/"><img src="/images/media/logo_main.png" style="padding-left: 55px;"alt="logo"/></a>
+      </div>
+      <div id="product_section">
+            <div class="category"><a href="/rainbow">CLASSIC</a></div>
+            <div class="category"><a href="/custom">CUSTOM</a></div>
+            <div class="category"><a href="/marchandise">NOT EATABLE</a></div>
+      </div>
+      <div id="user">
+        <div class="section">LOG IN</div>
+        <div class="section">SIGN UP</div>
+      </div>
+    </div>
+
+    <div id="products">
+
+    <%= yield %>
+
+    </div>
+  <%# <div id="footer">
+            <div class="category"><a href="/about_us">ABOUT US</a></div>
+            <div class="category"><a href="/contacts">CONTACTS</a></div>
+            <div class="category"><a href="/faq">FAQ</a></div>
+      </div>
+  </div>
+</div> %>
+</body>
+</html> 
