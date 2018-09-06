@@ -15,7 +15,7 @@ Ruby 2.5.1
 
 <img src="https://github.com/mary-tkachenko/guilty_pleasure_bakery/blob/master/Screenshot%202018-09-06%2013.55.22.png?raw=true" width="600">
 
-* Get information about bakery at the "About Us section":
+* Get information about bakery at the "About Us" section:
 
 <img src="https://github.com/mary-tkachenko/guilty_pleasure_bakery/blob/master/Screenshot%202018-09-06%2013.54.53.png?raw=true" width="600">
 
